@@ -2,6 +2,8 @@
 
 My solutions to the problem sets of **[CS50x 2026](https://cs50.harvard.edu/x/2026/)**, Harvard University's Introduction to Computer Science.
 
+**Final project:** [EmotionScope](https://github.com/pabloooduran/CS50x-2026-Final-Project), a Flask web app that detects faces in an image and classifies their facial expressions with a custom-trained model.
+
 > All code in this repository was written by me, following [CS50's academic honesty policy](https://cs50.harvard.edu/x/2026/honesty/).
 
 ## Live demos
