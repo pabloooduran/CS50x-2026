@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Pablo | Contact Me</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+        <div class="container">
+            <a class="navbar-brand brand-name" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContact">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContact">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="subhero-section">
+        <div class="container text-center">
+            <p class="hero-tag">Contact</p>
+            <h1 class="subhero-title">Let's stay in touch</h1>
+            <p class="subhero-subtitle">
+                This page includes a few fictional contact details and a small interactive form.
+            </p>
+        </div>
+    </header>
+
+    <main class="container page-spacing">
+        <section class="row">
+            <div class="col-lg-5 mb-4">
+                <div class="content-card">
+                    <h2>Contact info</h2>
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">pablo1504@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@pablo1504</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/pablo</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">City</span>
+                        <span class="contact-value">Madrid, Spain</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 mb-4">
+                <div class="content-card">
+                    <h2>Send a message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input id="name" type="text" class="form-control custom-input" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <textarea id="message" class="form-control custom-input" rows="5" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-main">Send message</button>
+                    </form>
+
+                    <p id="form-result" class="dynamic-text mt-3"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-banner text-center">
+            <h2>Need a quick answer?</h2>
+            <p>You can also browse the other pages to know more about me and my interests.</p>
+            <a href="about.html" class="btn btn-main mr-2">About Me</a>
+            <a href="sports.html" class="btn btn-outline-dark-custom">Sports</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-1">Contact page with interactive form</p>
+            <small><a class="footer-link" href="index.html">Return home</a></small>
+        </div>
+    </footer>
+</body>
+</html>

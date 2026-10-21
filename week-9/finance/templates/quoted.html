@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form action="/quoted" method="post">
+        <div class="quote-card">
+            <h2>{{ result.name }}</h2>
+            <p class="symbol">({{ result.symbol }})</p>
+            <p class="price">{{ result.price | usd }}</p>
+        </div>
+    </form>
+{% endblock %}

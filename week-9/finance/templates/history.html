@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h2 class="title">History Summary</h2>
+
+    <div class="table-wrapper">
+        <table class="portfolio-table">
+            <thead>
+                <tr>
+                    <th>Operation</th>
+                    <th>Symbol</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in history %}
+                    <tr>
+                        <td class="{% if row.operation_type in ['BUY', 'Purchase', 'PURCHASE'] %}buy-cell{% else %}sell-cell{% endif %}">
+                            {% if row.operation_type in ['BUY', 'Purchase', 'PURCHASE'] %}
+                                ▲ {{ row.operation_type }}
+                            {% else %}
+                                ▼ {{ row.operation_type }}
+                            {% endif %}
+                        </td>
+
+                        <td>{{ row.symbol }}</td>
+
+                        <td class="{% if row.operation_type in ['BUY', 'Purchase', 'PURCHASE'] %}buy-cell{% else %}sell-cell{% endif %}">
+                            {% if row.shares > 0 %}
+                                {{ row.shares }}
+                            {% else %}
+                                {{ -row.shares }}
+                            {% endif %}
+                        </td>
+
+                        <td>{{ row.price | usd }}</td>
+                        <td>{{ row.transacted }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

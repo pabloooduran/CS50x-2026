@@ -1,0 +1,257 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+.quote-card {
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.symbol {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card {
+    margin: 80px auto;
+    padding: 30px;
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.cash-box {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+}
+
+.quote-card {
+    margin: 30px auto 0;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card .symbol {
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.quote-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+}
+
+.summary-bar {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    display: flex;
+    gap: 18px;
+}
+
+.summary-box {
+    min-width: 180px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.summary-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.summary-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.total-box .summary-value {
+    color: #2563eb;
+}
+
+.summary-box {
+    transition: transform 0.2s ease;
+}
+
+.summary-box:hover {
+    transform: translateY(-2px);
+}
+
+.table-wrapper {
+    width: min(1000px, 92%);
+    margin: 25px auto 0;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 12px 18px 18px;
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.portfolio-table thead th {
+    text-align: left;
+    padding: 18px 16px;
+    font-size: 0.95rem;
+    color: #6b7280;
+    border-bottom: 2px solid #e5e7eb;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-table tbody td {
+    padding: 18px 16px;
+    border-bottom: 1px solid #eef2f7;
+    color: #111827;
+}
+
+.portfolio-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.portfolio-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.portfolio-table td.buy-cell {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.portfolio-table td.sell-cell {
+    color: #dc2626;
+    font-weight: 700;
+}
+/* símbolos centrados */
+.portfolio-table th:nth-child(1),
+.portfolio-table td:nth-child(1) {
+    text-align: center;
+}
+
+/* números alineados */
+.portfolio-table th:nth-child(2),
+.portfolio-table th:nth-child(3),
+.portfolio-table th:nth-child(4),
+.portfolio-table td:nth-child(2),
+.portfolio-table td:nth-child(3),
+.portfolio-table td:nth-child(4) {
+    text-align: right;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.buy-cell {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.sell-cell {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.action-cell {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.inline-form {
+    display: inline-block;
+    margin: 0;
+}

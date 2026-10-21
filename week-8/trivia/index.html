@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function () {
+                let buttons = document.querySelectorAll(".choice");
+                let result1 = document.querySelector("#result1");
+
+                for (let i = 0; i < buttons.length; i++) {
+                    buttons[i].addEventListener("click", function () {
+
+                        // do not reset all buttons
+                        for (let j = 0; j < buttons.length; j++) {
+                            buttons[j].style.backgroundColor = "";
+                        }
+
+                        // check if it is correct
+                        if (buttons[i].classList.contains("correct")) {
+                            buttons[i].style.backgroundColor = "green";
+                            result1.innerHTML = "Correct!";
+                        } else {
+                            buttons[i].style.backgroundColor = "red";
+                            result1.innerHTML = "Incorrect";
+                        }
+                    });
+                }
+
+                let check = document.querySelector("#check");
+                let answer = document.querySelector("#answer");
+                let result2 = document.querySelector("#result2");
+
+                check.addEventListener("click", function () {
+                    if (answer.value.trim().toLowerCase() === "madrid") {
+                        answer.style.backgroundColor = "green";
+                        result2.innerHTML = "Correct!";
+                    } else {
+                        answer.style.backgroundColor = "red";
+                        result2.innerHTML = "Incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which planet is known as the Red Planet?</h3>
+                <button class="choice incorrect">Earth</button>
+                <button class="choice correct">Mars</button>
+                <button class="choice incorrect">Venus</button>
+                <button class="choice incorrect">Jupiter</button>
+                <p id="result1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the capital city of Spain?</h3>
+                <input id="answer" type="text">
+                <button id="check">Check Answer</button>
+                <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>

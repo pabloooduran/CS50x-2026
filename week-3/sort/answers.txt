@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Because it takes too long in the random and reversed files, but very few time in the sorted files
+
+sort2 uses: merge sort
+
+How do you know?: Because it takes the less time possible in all the three kind of files
+
+sort3 uses: selection sort
+
+How do you know?: Less time than the sort1 but more than the sort 2. The bubble sort is faster than the selection but slower than the merge

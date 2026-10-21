@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <div class="cash-box">
+        Cash available: {{ cash | usd }}
+    </div>
+
+    <h2 class="title">Buy Stock</h2>
+
+    <div class="card">
+        <form action="/buy" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus
+                       class="form-control mx-auto w-auto"
+                       name="symbol"
+                       placeholder="Introduce Symbol"
+                       type="text"
+                       value="{{ prefilled_symbol or '' }}">
+            </div>
+
+            <div class="mb-3">
+                <input autocomplete="off"
+                       class="form-control mx-auto w-auto"
+                       name="shares"
+                       placeholder="Shares quantity"
+                       type="number">
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <p class="subtitle">
+        Enter a symbol and a quantity of stock to buy
+    </p>
+{% endblock %}

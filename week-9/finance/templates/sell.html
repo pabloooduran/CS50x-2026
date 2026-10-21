@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <div class="cash-box">
+        Cash available: {{ cash | usd }}
+    </div>
+
+    <h2 class="title">Sell Stock</h2>
+
+    <div class="card">
+        <form action="/sell" method="post">
+
+            <div class="mb-3">
+                <select class="form-control mx-auto w-auto" name="symbol">
+                    <option disabled {% if not prefilled_symbol %}selected{% endif %} value="">
+                        Select Symbol
+                    </option>
+
+                    {% for stock in shares %}
+                        <option value="{{ stock.symbol }}"
+                            {% if stock.symbol == prefilled_symbol %}selected{% endif %}>
+                            {{ stock.symbol }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input autocomplete="off"
+                       class="form-control mx-auto w-auto"
+                       name="shares"
+                       placeholder="Shares quantity"
+                       type="number">
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+        </form>
+    </div>
+{% endblock %}

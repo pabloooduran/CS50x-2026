@@ -1,0 +1,30 @@
+10 HTML tags used:
+1. nav
+2. a
+3. header
+4. main
+5. section
+6. h1
+7. h2
+8. p
+9. button
+10. form
+
+Other HTML tags also used:
+ul, li, div, input, textarea, footer, small, select, option, label
+
+5 CSS properties used:
+1. background
+2. color
+3. padding
+4. border-radius
+5. box-shadow
+
+Other CSS properties also used:
+font-weight, margin, font-size, border, line-height, transition
+
+JavaScript:
+I used JavaScript to add interactivity through a welcome button, random facts, a mood selector, sport buttons, and a contact form message.
+
+Bootstrap:
+I used Bootstrap for the responsive navigation bar, grid layout, spacing utilities, buttons, forms, and overall responsive structure.
