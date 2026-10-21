@@ -2,7 +2,7 @@
 
 My solutions to the problem sets of **[CS50x 2026](https://cs50.harvard.edu/x/2026/)**, Harvard University's Introduction to Computer Science.
 
-**Final project:** [EmotionScope](https://github.com/pabloooduran/CS50x-2026-Final-Project), a Flask web app that detects faces in an image and classifies their facial expressions with a custom-trained model.
+**Final project:** [EmotionScope](https://github.com/pabloooduran/CS50x-2026-Final-Project), a Flask web app that detects faces in an image and classifies their facial expressions with a custom-trained model ([live demo](https://pabloooduran--emotionscope-web.modal.run)).
 
 > All code in this repository was written by me, following [CS50's academic honesty policy](https://cs50.harvard.edu/x/2026/honesty/).
 
@@ -12,6 +12,7 @@ The web projects can be tried directly in the browser, with nothing to install:
 
 | Project | Stack | Demo |
 |---|---|---|
+| [EmotionScope](https://github.com/pabloooduran/CS50x-2026-Final-Project) (final project) | Flask · YOLO · DeepFace · SQLite | [pabloooduran--emotionscope-web.modal.run](https://pabloooduran--emotionscope-web.modal.run) |
 | [finance](#finance) | Flask · SQLite · Jinja | [pabloooduran-cs50-finance.onrender.com](https://pabloooduran-cs50-finance.onrender.com) |
 | [birthdays](#birthdays) | Flask · SQLite | [pabloooduran-cs50-birthdays.onrender.com](https://pabloooduran-cs50-birthdays.onrender.com) |
 | [homepage](#homepage) | HTML · CSS · Bootstrap · JavaScript | [pabloooduran.github.io/CS50x-2026/week-8/homepage](https://pabloooduran.github.io/CS50x-2026/week-8/homepage/) |
