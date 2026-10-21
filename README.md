@@ -128,6 +128,8 @@ A four-page personal website (Home, About, Sports, Contact) built with HTML, cus
 ### [birthdays](week-9/birthdays)
 A small Flask app backed by SQLite for keeping track of friends' birthdays. You can add new entries through a form and delete existing ones.
 
+**▶ [Live demo](https://pabloooduran-cs50-birthdays.onrender.com)**
+
 ### [finance](week-9/finance)
 A full-stack web app for "trading" stocks with virtual money, built with **Flask, Jinja and SQLite**, using real-time quotes from an external API.
 - **Accounts:** register and log in with session-based authentication and passwords hashed with scrypt. Each new user starts with $10,000.
@@ -138,6 +140,10 @@ A full-stack web app for "trading" stocks with virtual money, built with **Flask
 
 All database queries are parameterised to prevent SQL injection.
 
+**▶ [Live demo](https://pabloooduran-cs50-finance.onrender.com)** — register any username to try it.
+
+> The Flask demos are hosted on Render's free plan. They go to sleep after 15 minutes without visits, so the first load can take up to a minute. The databases also reset periodically.
+
 ---
 
 ## Running the code
@@ -146,6 +152,6 @@ The projects were written in the CS50 codespace, which comes with CS50's librari
 
 - **C:** install the [CS50 Library for C](https://github.com/cs50/libcs50), then compile with `make <name>` (or `make` inside `filter-more` and `speller`).
 - **Python:** `pip install cs50`, then `python <file>.py`.
-- **Flask:** inside `week-9/finance` or `week-9/birthdays`, run `pip install -r requirements.txt` (finance) or `pip install cs50 flask flask-session` (birthdays), then `flask run`.
+- **Flask:** inside `week-9/finance` or `week-9/birthdays`, run `pip install -r requirements.txt`, then `flask run`.
 
 Some large or binary files that CS50 provides with each problem aren't included here: the speller dictionaries, the DNA databases, `movies.db`, the precompiled `sort` programs and the sample images and audio. They come with each problem's distribution code on the [CS50x website](https://cs50.harvard.edu/x/2026/). `week-9/finance/finance.db` contains the schema only, so register a new user to try the app.
