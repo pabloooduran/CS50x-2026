@@ -4,6 +4,19 @@ My solutions to the problem sets of **[CS50x 2026](https://cs50.harvard.edu/x/20
 
 > All code in this repository was written by me, following [CS50's academic honesty policy](https://cs50.harvard.edu/x/2026/honesty/).
 
+## Live demos
+
+The web projects can be tried directly in the browser, with nothing to install:
+
+| Project | Stack | Demo |
+|---|---|---|
+| [finance](#finance) | Flask · SQLite · Jinja | [pabloooduran-cs50-finance.onrender.com](https://pabloooduran-cs50-finance.onrender.com) |
+| [birthdays](#birthdays) | Flask · SQLite | [pabloooduran-cs50-birthdays.onrender.com](https://pabloooduran-cs50-birthdays.onrender.com) |
+| [homepage](#homepage) | HTML · CSS · Bootstrap · JavaScript | [pabloooduran.github.io/CS50x-2026/week-8/homepage](https://pabloooduran.github.io/CS50x-2026/week-8/homepage/) |
+| [trivia](#trivia) | HTML · CSS · JavaScript | [pabloooduran.github.io/CS50x-2026/week-8/trivia](https://pabloooduran.github.io/CS50x-2026/week-8/trivia/) |
+
+The Flask apps run on a free plan and go to sleep when nobody uses them, so the first load can take up to a minute.
+
 ## What's covered
 
 | | |
@@ -120,8 +133,12 @@ A mystery solved only with SQL. Starting from a crime-scene report, I cross-refe
 ### [trivia](week-8/trivia)
 A two-question trivia page: a multiple-choice question and a free-response one. Answers are checked in JavaScript: the chosen answer turns green or red and a feedback message appears.
 
+**▶ [Live demo](https://pabloooduran.github.io/CS50x-2026/week-8/trivia/)**
+
 ### [homepage](week-8/homepage)
 A four-page personal website (Home, About, Sports, Contact) built with HTML, custom CSS and **Bootstrap**. JavaScript adds interactivity: a welcome button, random facts, a mood selector, sport cards and client-side validation of the contact form.
+
+**▶ [Live demo](https://pabloooduran.github.io/CS50x-2026/week-8/homepage/)**
 
 ## Week 9 — Flask
 
