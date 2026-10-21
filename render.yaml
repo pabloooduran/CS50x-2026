@@ -1,0 +1,33 @@
+# Render Blueprint: live demos of the two Flask apps (free plan).
+# Free instances sleep after 15 minutes without traffic, and the SQLite
+# databases reset to the committed version on every restart.
+services:
+  - type: web
+    name: pabloooduran-cs50-finance
+    runtime: python
+    plan: free
+    rootDir: week-9/finance
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    autoDeployTrigger: commit
+    buildFilter:
+      paths:
+        - week-9/finance/**
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+
+  - type: web
+    name: pabloooduran-cs50-birthdays
+    runtime: python
+    plan: free
+    rootDir: week-9/birthdays
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    autoDeployTrigger: commit
+    buildFilter:
+      paths:
+        - week-9/birthdays/**
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
